@@ -18,6 +18,31 @@ $panel-width: $divider-px * 3;
 body {
   font-family: 'Helvetica', sans-serif;
   margin: 0;
+  line-height: $artboard-grid-px * 2;
+}
+
+.field, .toggle, .buttons {
+  margin: $artboard-grid-px;
+}
+
+.buttons, .toggle {
+  float: left;
+  clear: both;
+}
+
+.buttons .button {
+  float: left;
+}
+
+.toggle div {
+  float: left;
+}
+
+.checkbox {
+  margin: $artboard-grid-px / 2;
+  height: $artboard-grid-px - 2;
+  width: $artboard-grid-px - 2;
+  border: 1px solid #000;
 }
 
 .panel {
