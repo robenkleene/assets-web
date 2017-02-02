@@ -8,12 +8,11 @@ $divider-px: $artboard-grid-px * $artboard-divider-interval;
 
 @import '../../node_modules/artboard/dist/sass/artboard';
 
-// Assets
-
+$border-width: 1px;
 $panel-left: $divider-px;
 $panel-top: $divider-px;
-$panel-height: $divider-px * 2;
-$panel-width: $divider-px * 3;
+$panel-height: $divider-px * 2 - ($border-width * 2);
+$panel-width: $divider-px * 3 - ($border-width * 2);
 
 body {
   font-family: 'Helvetica', sans-serif;
@@ -40,9 +39,9 @@ body {
 
 .checkbox {
   margin: $artboard-grid-px / 2;
-  height: $artboard-grid-px - 2;
-  width: $artboard-grid-px - 2;
-  border: 1px solid #000;
+  height: $artboard-grid-px - ($border-width * 2);
+  width: $artboard-grid-px - ($border-width * 2);
+  border: $border-width solid #000;
 }
 
 .panel {
@@ -51,5 +50,5 @@ body {
   top: $panel-top;
   width: $panel-width;
   height: $panel-height;
-  border: 1px solid #000;
+  border: $border-width solid #000;
 }
