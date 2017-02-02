@@ -18,21 +18,17 @@ body {
   margin: 0;
   line-height: 20px; }
 
-.field, .toggle, .buttons {
+.field,
+.toggle,
+.buttons {
   margin: 10px; }
 
-.buttons, .toggle {
-  float: left;
-  clear: both; }
-
+.toggle .label,
 .buttons .button {
-  float: left; }
-
-.toggle div {
-  float: left; }
+  display: inline-block; }
 
 .checkbox {
-  margin: 5px;
+  display: inline-block;
   height: 8px;
   width: 8px;
   border: 1px solid #000; }
