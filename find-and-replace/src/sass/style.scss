@@ -1,7 +1,7 @@
 // Grid
 $artboard-grid-px: 10px;
 $artboard-grid-color: rgba(0, 0, 0, 0.25);
-$artboard-divider-interval: 10;
+$artboard-divider-interval: 8;
 $artboard-divider-color: rgba(0, 0, 0, 0.5);
 $artboard-overlay-opacity: 0.5;
 $divider-px: $artboard-grid-px * $artboard-divider-interval;
@@ -11,14 +11,23 @@ $divider-px: $artboard-grid-px * $artboard-divider-interval;
 $border-width: 1px;
 $panel-left: $divider-px;
 $panel-top: $divider-px;
-$panel-height: $divider-px * 2 - ($border-width * 2);
-$panel-width: $divider-px * 3 - ($border-width * 2);
+// $panel-height: 162px;
+// $panel-width: 277px;
 $line-height: $artboard-grid-px * 2;
 
 body {
   font-family: 'Helvetica', sans-serif;
   margin: 0;
   line-height: $line-height;
+}
+
+.panel {
+  left: $panel-left;
+  position: absolute;
+  top: $panel-top;
+  // width: $panel-width;
+  // height: $panel-height;
+  border: $border-width solid #000;
 }
 
 .field,
@@ -51,11 +60,12 @@ body {
   border: $border-width solid #000;
 }
 
-.panel {
-  left: $panel-left;
-  position: absolute;
-  top: $panel-top;
-  width: $panel-width;
-  height: $panel-height;
+.buttons .button {
+  margin-right: $artboard-grid-px;
+  padding: 0 $artboard-grid-px;
   border: $border-width solid #000;
+}
+
+.buttons .last {
+  margin-right: 0;
 }

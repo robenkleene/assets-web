@@ -1,10 +1,10 @@
 .artboard-grid {
-  background-image: repeating-linear-gradient(0deg, transparent, transparent 99px, 99px, rgba(0, 0, 0, 0.5) 100px), repeating-linear-gradient(-90deg, transparent, transparent 99px, 99px, rgba(0, 0, 0, 0.5) 100px), repeating-linear-gradient(0deg, transparent, transparent 9px, 9px, rgba(0, 0, 0, 0.25) 10px), repeating-linear-gradient(-90deg, transparent, transparent 9px, 9px, rgba(0, 0, 0, 0.25) 10px);
-  background-size: 100px 100px; }
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 79px, 79px, rgba(0, 0, 0, 0.5) 80px), repeating-linear-gradient(-90deg, transparent, transparent 79px, 79px, rgba(0, 0, 0, 0.5) 80px), repeating-linear-gradient(0deg, transparent, transparent 9px, 9px, rgba(0, 0, 0, 0.25) 10px), repeating-linear-gradient(-90deg, transparent, transparent 9px, 9px, rgba(0, 0, 0, 0.25) 10px);
+  background-size: 80px 80px; }
 
 .artboard-overlay {
-  background-image: repeating-linear-gradient(0deg, transparent, transparent 99px, 99px, rgba(0, 0, 0, 0.5) 100px), repeating-linear-gradient(-90deg, transparent, transparent 99px, 99px, rgba(0, 0, 0, 0.5) 100px), repeating-linear-gradient(0deg, transparent, transparent 9px, 9px, rgba(0, 0, 0, 0.25) 10px), repeating-linear-gradient(-90deg, transparent, transparent 9px, 9px, rgba(0, 0, 0, 0.25) 10px);
-  background-size: 100px 100px;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 79px, 79px, rgba(0, 0, 0, 0.5) 80px), repeating-linear-gradient(-90deg, transparent, transparent 79px, 79px, rgba(0, 0, 0, 0.5) 80px), repeating-linear-gradient(0deg, transparent, transparent 9px, 9px, rgba(0, 0, 0, 0.25) 10px), repeating-linear-gradient(-90deg, transparent, transparent 9px, 9px, rgba(0, 0, 0, 0.25) 10px);
+  background-size: 80px 80px;
   opacity: 0.5;
   height: 100%;
   left: 0;
@@ -17,6 +17,12 @@ body {
   font-family: 'Helvetica', sans-serif;
   margin: 0;
   line-height: 20px; }
+
+.panel {
+  left: 80px;
+  position: absolute;
+  top: 80px;
+  border: 1px solid #000; }
 
 .field,
 .toggle,
@@ -43,10 +49,10 @@ body {
   width: 8px;
   border: 1px solid #000; }
 
-.panel {
-  left: 100px;
-  position: absolute;
-  top: 100px;
-  width: 298px;
-  height: 198px;
+.buttons .button {
+  margin-right: 10px;
+  padding: 0 10px;
   border: 1px solid #000; }
+
+.buttons .last {
+  margin-right: 0; }
