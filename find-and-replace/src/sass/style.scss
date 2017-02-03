@@ -13,11 +13,12 @@ $panel-left: $divider-px;
 $panel-top: $divider-px;
 $panel-height: $divider-px * 2 - ($border-width * 2);
 $panel-width: $divider-px * 3 - ($border-width * 2);
+$line-height: $artboard-grid-px * 2;
 
 body {
   font-family: 'Helvetica', sans-serif;
   margin: 0;
-  line-height: $artboard-grid-px * 2;
+  line-height: $line-height;
 }
 
 .field,
@@ -29,6 +30,18 @@ body {
 .toggle .label,
 .buttons .button {
   display: inline-block;
+}
+
+.field .label {
+  display: block;
+  float: left;
+  padding-right: $artboard-grid-px;
+}
+
+.value {
+  height: $line-height - $border-width * 2;
+  overflow: hidden;
+  border: $border-width solid #000;
 }
 
 .checkbox {
