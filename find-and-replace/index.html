@@ -4,21 +4,26 @@
 	<meta charset="utf-8" />
 	<title>Windowpane Demo Animation</title>
 	<link rel="stylesheet" href="dest/css/style.css" />
+<style>
+.state {
+	display: none;
+}
+</style>
 </head>
 <body>
 
-	<!-- <div class="artboard-overlay"></div> -->
+	<div class="artboard-overlay"></div>
 
 	<section>
-
+		
 		<div class="panel">
 			<div class="field">
 				<div class="label">Find:</div>
-				<div class="value"></div>
+				<div class="value"><div class="state">The Old</div></div>
 			</div>
 			<div class="field">
 				<div class="label">Replace:</div>
-				<div class="value"></div>
+				<div class="value"><div class="state">The New</div></div>
 			</div>
 			<div class="toggle">
 				<div class="checkbox"></div>
@@ -32,6 +37,7 @@
 				<div class="button">Find</div><div class="button">Replace</div><div class="last button">Replace All</div>
 			</div>
 		</div>
+
 
 	</section>
 

@@ -14,6 +14,7 @@ $panel-top: $divider-px;
 // $panel-height: 162px;
 // $panel-width: 277px;
 $line-height: $artboard-grid-px * 2;
+$horizontal-spacing: $artboard-grid-px / 2;
 
 body {
   font-family: 'Helvetica', sans-serif;
@@ -44,12 +45,13 @@ body {
 .field .label {
   display: block;
   float: left;
-  padding-right: $artboard-grid-px;
+  margin-right: $horizontal-spacing;
 }
 
 .value {
   height: $line-height - $border-width * 2;
   overflow: hidden;
+  padding: 0 $horizontal-spacing;
   border: $border-width solid #000;
 }
 
@@ -62,7 +64,7 @@ body {
 
 .buttons .button {
   margin-right: $artboard-grid-px;
-  padding: 0 $artboard-grid-px;
+  padding: 0 $horizontal-spacing;
   border: $border-width solid #000;
 }
 
