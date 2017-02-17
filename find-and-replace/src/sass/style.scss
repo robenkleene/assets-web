@@ -26,8 +26,6 @@ body {
   left: $panel-left;
   position: absolute;
   top: $panel-top;
-  // width: $panel-width;
-  // height: $panel-height;
   border: $border-width solid #000;
 }
 
@@ -37,8 +35,7 @@ body {
   margin: $artboard-grid-px;
 }
 
-.toggle .label,
-.buttons .button {
+.toggle .label {
   display: inline-block;
 }
 
@@ -62,7 +59,14 @@ body {
   border: $border-width solid #000;
 }
 
+.buttons {
+  clear: both;
+  overflow: hidden;
+}
+
 .buttons .button {
+  height: $line-height - $border-width * 2;
+  float: left;
   margin-right: $artboard-grid-px;
   padding: 0 $horizontal-spacing;
   border: $border-width solid #000;
